@@ -30,4 +30,4 @@ jobs:
     - name: Installing surge!!
       run: npm install --global surge
     - name: deploying site using Surge!!secerts
-      run: surge ./ secret-servant.surge.sh --token ${{ secerts.SURGE_TOKEN}}
+      run: surge ./ secret-servant.surge.sh --token ${{ secrets.SURGE_TOKEN}}
